@@ -100,13 +100,13 @@ rails generate controller articles
 ```
 
 CREATES:
-`app/controllers/articles_controller.rb` # The controller file itself
-`app/views/articles` # The directory to contain the controller’s view templates
-*`test/controllers/articles_controller_test.rb` # The controller’s unit tests file
-`app/helpers/articles_helper.rb` # A helper file to assist with the views (discussed later)
-*`test/helpers/articles_helper_test.rb` # The helper’s unit test file
-`app/assets/javascripts/articles.js.coffee` # A CoffeeScript file for this controller
-`app/assets/stylesheets/articles.css.scss` # An SCSS stylesheet for this controller
+- `app/controllers/articles_controller.rb` # The controller file itself
+- `app/views/articles` # The directory to contain the controller’s view templates
+- *`test/controllers/articles_controller_test.rb` # The controller’s unit tests file
+- `app/helpers/articles_helper.rb` # A helper file to assist with the views (discussed later)
+- *`test/helpers/articles_helper_test.rb` # The helper’s unit test file
+- - `app/assets/javascripts/articles.js.coffee` # A CoffeeScript file for this controller
+- `app/assets/stylesheets/articles.css.scss` # An SCSS stylesheet for this controller
 
 \*again, these wouldn't won't be there using Rspec
 
