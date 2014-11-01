@@ -39,15 +39,10 @@ rails generate model Article
 
 `db/migrate/20141101012944_create_articles.rb` #database migration file
 `app/models/article.rb` #The file that will hold the model code
-
-      create      spec/models/article_spec.rb
-
-`db/migrate/(some_time_stamp)_create_articles.rb` 
-`app/models/article.rb` #
 `test/models/article_test.rb` #A file to hold unit tests for Article
 `test/fixtures/articles.yml` #A fixtures file to assist with unit test
 
-note on the second 2 files above: this will create different files using rspec, which i added later on in our walk-through, but which you should add before generating anything.
+note on the second 2 files above: i ended up adding rspec so this repo has different files for testing, the two listed above would be what you get if you if you keep the default testing suite.
 
 - since we didn't add fields via the command line, we need to flesh out the model by adding this to the migration file.
  
@@ -86,7 +81,7 @@ run...
 rake routes
 ```
 and see what routes were generated when you include all resources (by not adding include/exclude specifications).
-
+```
 Prefix Verb   URI Pattern                  Controller#Action
 articles      GET    /articles(.:format)          articles#index
               POST   /articles(.:format)          articles#create
@@ -96,7 +91,7 @@ article       GET    /articles/:id(.:format)      articles#show
               PATCH  /articles/:id(.:format)      articles#update
               PUT    /articles/:id(.:format)      articles#update
               DELETE /articles/:id(.:format)      articles#destroy
-
+```
 ## Generate controller
 ```ruby
 rails generate scaffold_controller articles
@@ -113,5 +108,5 @@ CREATES:
 `app/assets/javascripts/articles.js.coffee` # A CoffeeScript file for this controller
 `app/assets/stylesheets/articles.css.scss` # An SCSS stylesheet for this controller
 
-won't be there using Rspec
+\*again, these wouldn't won't be there using Rspec
 
