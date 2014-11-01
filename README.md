@@ -37,10 +37,10 @@ rails generate model Article
 
 #### Generated:
 
-`db/migrate/20141101012944_create_articles.rb` #database migration file
-`app/models/article.rb` #The file that will hold the model code
-`test/models/article_test.rb` #A file to hold unit tests for Article
-`test/fixtures/articles.yml` #A fixtures file to assist with unit test
+- `db/migrate/20141101012944_create_articles.rb` #database migration file
+- `app/models/article.rb` #The file that will hold the model code
+- `test/models/article_test.rb` #A file to hold unit tests for Article
+- `test/fixtures/articles.yml` #A fixtures file to assist with unit test
 
 note on the second 2 files above: i ended up adding rspec so this repo has different files for testing, the two listed above would be what you get if you if you keep the default testing suite.
 
@@ -100,13 +100,13 @@ rails generate controller articles
 ```
 
 CREATES:
-`app/controllers/articles_controller.rb` # The controller file itself
-`app/views/articles` # The directory to contain the controller’s view templates
-*`test/controllers/articles_controller_test.rb` # The controller’s unit tests file
-`app/helpers/articles_helper.rb` # A helper file to assist with the views (discussed later)
-*`test/helpers/articles_helper_test.rb` # The helper’s unit test file
-`app/assets/javascripts/articles.js.coffee` # A CoffeeScript file for this controller
-`app/assets/stylesheets/articles.css.scss` # An SCSS stylesheet for this controller
+- `app/controllers/articles_controller.rb` # The controller file itself
+- `app/views/articles` # The directory to contain the controller’s view templates
+- *`test/controllers/articles_controller_test.rb` # The controller’s unit tests file
+- `app/helpers/articles_helper.rb` # A helper file to assist with the views (discussed later)
+- *`test/helpers/articles_helper_test.rb` # The helper’s unit test file
+- - `app/assets/javascripts/articles.js.coffee` # A CoffeeScript file for this controller
+- `app/assets/stylesheets/articles.css.scss` # An SCSS stylesheet for this controller
 
 \*again, these wouldn't won't be there using Rspec
 
